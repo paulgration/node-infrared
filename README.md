@@ -77,18 +77,27 @@ is to reside and whether uinput is required).
       logfile: 'transmitter2.log
     });
     
+    var rx1 = new node_ir.IRRecord({device: 'receiver1'});
+    rx1.on('stdout', function(data) {
+      // handle output
+    });
+    
+    var tx1 = new node_ir.IRSend({device: 'transmitter1'});
+    var tx2 = new node_ir.IRSend({device: 'transmitter2'});
+    
     receiver1.on('running', function() {
-      var rx1 = new node_ir.IRRecord({device: 'lircd1'});
-      rx1.on('stdout', function(data) {
-        // handle output
-      });
+      rx1.start('remote');
       // etc
     });
     
+    
     transmitter1.on('running', function() {
-      var tx1 = new node_ir.IRSend({device: 'lircd2'});
+      tx1.list('', '', callback);
     });
     
+      
     transmitter2.on('running', function() {
-      var tx2 = new node_ir.IRSend({device: 'lircd3'});
+      tx2.send_once('remote', 'code', callback);
     });
+
+More features to come...
