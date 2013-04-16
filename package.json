@@ -1,0 +1,16 @@
+{
+  "name": "node_ir",
+  "version": "0.0.1",
+  "description": "Node infrared control",
+  "main": "lib/node_ir.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pmgration/node_ir.git"
+  },
+  "keywords": [
+    "infrared"
+  ],
+  "dependencies": {
+  },
+  "author": "Paul Gration <pmgration@gmail.com>"
+}
