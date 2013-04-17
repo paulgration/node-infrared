@@ -1,11 +1,11 @@
 {
-  "name": "node_ir",
+  "name": "ir",
   "version": "0.0.1",
   "description": "Node infrared control",
-  "main": "lib/node_ir.js",
+  "main": "./ir",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pmgration/node_ir.git"
+    "url": "git://github.com/pmgration/node-ir.git"
   },
   "keywords": [
     "infrared"
