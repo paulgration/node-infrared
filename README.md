@@ -1,4 +1,4 @@
-# node_ir
+# node-ir
 
 
 Wrapper for lirc
