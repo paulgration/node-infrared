@@ -1,4 +1,4 @@
-# node-ir
+# node-infrared
 
 
 Wrapper for lirc
@@ -20,14 +20,14 @@ Most common usage:
 
 ## Using IRSend
 
-    var IRSend = require('ir').irsend;
+    var IRSend = require('infrared').irsend;
 
     var irsend = new IRSend();
     irsend.list('', '', callback);
 
 ## Using IRRecord (may require elevated privileges)
 
-    var IRRecord = require('ir').irrecord;
+    var IRRecord = require('infrared').irrecord;
     
     var irrecord = new IRRecord();
     irrecord.on('stdout', function(data) {
@@ -49,7 +49,7 @@ Most common usage:
 
 ## Using IRW
 
-    var IRW = require('ir').irw;
+    var IRW = require('infrared').irw;
 
     var irw = new IRW();
     irw.on('stdout', function(data) {
@@ -65,9 +65,9 @@ of lircd instances or more are required these can also be created
 (may need elevated privileges depending on where the lircd socket file
 is to reside and whether uinput is required).
 
-    var LIRCD = require('ir').lircd;
-    var IRRecord = require('ir').irrecord;
-    var IRSend = require('ir').irsend;
+    var LIRCD = require('infrared').lircd;
+    var IRRecord = require('infrared').irrecord;
+    var IRSend = require('infrared').irsend;
 
     var receiver1 = new LIRCD({device: 'serial=00000001',
       output: 'receiver1',

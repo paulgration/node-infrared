@@ -1,16 +1,18 @@
 {
-  "name": "ir",
+  "name": "infrared",
   "version": "0.0.1",
   "description": "Node infrared control",
-  "main": "./ir",
+  "main": "./infrared",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pmgration/node-ir.git"
+    "url": "git://github.com/pmgration/node-infrared.git"
   },
   "keywords": [
     "infrared"
   ],
-  "dependencies": {
-  },
-  "author": "Paul Gration <pmgration@gmail.com>"
+  "author": "Paul Gration <pmgration@gmail.com>",
+  "readmeFilename": "README.md"
 }
