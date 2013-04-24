@@ -72,17 +72,17 @@ is to reside and whether uinput is required).
     var receiver1 = new LIRCD({device: 'serial=00000001',
       output: 'receiver1',
       pidfile: 'receiver1.pid',
-      logfile: 'receiver1.log
+      logfile: 'receiver1.log'
     });
     var transmitter1 = new LIRCD({device: 'serial=00000002',
       output: 'transmitter1',
       pidfile: 'transmitter1.pid',
-      logfile: 'transmitter1.log
+      logfile: 'transmitter1.log'
     });
     var transmitter2 = new LIRCD({device: 'serial=01234567',
       output: 'transmitter2',
       pidfile: 'transmitter2.pid',
-      logfile: 'transmitter2.log
+      logfile: 'transmitter2.log'
     });
     
     var rx1 = new IRRecord({device: 'receiver1'});
