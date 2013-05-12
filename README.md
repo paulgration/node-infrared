@@ -97,15 +97,17 @@ is to reside and whether uinput is required).
       rx1.start('remote');
       // etc
     });
-    
-    
+        
     transmitter1.on('running', function() {
       tx1.list('', '', callback);
     });
-    
-      
+          
     transmitter2.on('running', function() {
       tx2.send_once('remote', 'code', callback);
     });
+
+    receiver1.start();
+    transmitter1.start();
+    transmitter2.start();
 
 More features to come...
