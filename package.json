@@ -1,6 +1,6 @@
 {
   "name": "infrared",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node infrared control",
   "main": "./infrared",
   "scripts": {
@@ -13,6 +13,9 @@
   "keywords": [
     "infrared"
   ],
+  "dependencies": {
+    "pty.js": ">=0.2.3"
+  },
   "author": "Paul Gration <pmgration@gmail.com>",
   "readmeFilename": "README.md"
 }
